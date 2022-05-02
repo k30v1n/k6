@@ -6,14 +6,15 @@ client.load(['../grpc-service/Protos'], 'greet.proto');
 
 export default () => {
   client.connect('localhost:5022', {
-    plaintext: true
+    plaintext: true // only for localhost as it does not support TLS/SSL
   });
 
-  const data = { name: 'Bert' };
+  const name = 'Bert';
+  const data = { name: name };
   const response = client.invoke('greet.Greeter/SayHello', data);
 
   check(response, {
-    'status is OK': (r) => r && r.status === grpc.StatusOK,
+    'status is OK': (r) => r && r.status === grpc.StatusOK
   });
 
   console.log(JSON.stringify(response.message));
