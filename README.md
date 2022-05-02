@@ -11,3 +11,8 @@
 - Docker `docker run -i grafana/k6 run script.js`
 - Linux/Max `k6 run script.js`
 - Windows `k6.exe run script.js`
+
+
+# gRPC
+- run with dotnet
+- call with https://kreya.app/

@@ -1,0 +1,12 @@
+{
+  "details": {
+    "methodFqn": "greet.Greeter.KeepTalking"
+  },
+  "requests": [
+    {
+      "location": "KeepTalking-request.json"
+    }
+  ],
+  "operationType": "serverStreaming",
+  "invokerName": "grpc"
+}

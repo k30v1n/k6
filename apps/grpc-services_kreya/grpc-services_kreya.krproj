@@ -1,0 +1,19 @@
+{
+  "id": "1c250803-4f60-4156-a637-f3db41ca4ac1",
+  "importStreams": [
+    {
+      "id": "dd4ff986-a806-4663-a088-0c82e4d31074",
+      "name": "proto-file",
+      "importerName": "ProtoFile",
+      "createMissingOperations": true,
+      "options": {
+        "files": [
+          "../grpc-service/Protos"
+        ],
+        "importPaths": []
+      }
+    }
+  ],
+  "authConfigs": [],
+  "certificates": []
+}
