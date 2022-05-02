@@ -8,6 +8,6 @@
 - Scripts must contain an exported default function - they will be considered a ENTRY POINT for the test
 
 # Running
-- Docker `docker run -i grafana/k6 run - <script.js`
+- Docker `docker run -i grafana/k6 run script.js`
 - Linux/Max `k6 run script.js`
 - Windows `k6.exe run script.js`
